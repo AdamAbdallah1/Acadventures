@@ -1,0 +1,108 @@
+.join-wrapper {
+    padding: 180px 0 100px;
+    background: #ffffff;
+}
+
+.text-center { text-align: center; }
+
+.join-header {
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.membership-badge {
+    background: #fff5e6;
+    color: #ff9900;
+    padding: 8px 20px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.join-header h1 {
+    font-size: 64px;
+    margin: 25px 0;
+    letter-spacing: -2px;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.benefit-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: 40px;
+    border: 1px solid #f0f4f8;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.benefit-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 30px 60px rgba(0, 86, 179, 0.1);
+}
+
+.benefit-card.highlighted {
+    border: 2px solid var(--primary-blue);
+    background: linear-gradient(to bottom, #ffffff, #f8fbff);
+}
+
+.benefit-icon {
+    font-size: 40px;
+    color: var(--primary-blue);
+    margin-bottom: 25px;
+}
+
+.benefit-card h3 { margin-bottom: 15px; font-size: 22px; }
+.benefit-card p { font-size: 15px; color: #667788; line-height: 1.7; }
+
+.cta-card {
+    background: var(--dark-blue);
+    color: white;
+    padding: 80px 40px;
+    border-radius: 50px;
+    position: relative;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cta-content { position: relative; z-index: 2; }
+
+.cta-card h2 { font-size: 42px; margin-bottom: 15px; }
+.cta-card p { opacity: 0.8; font-size: 18px; margin-bottom: 40px; }
+
+.join-primary-btn {
+    padding: 20px 60px;
+    background: white;
+    color: var(--dark-blue);
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-primary-btn:hover {
+    background: var(--primary-blue);
+    color: white;
+    transform: scale(1.05);
+}
+
+.trust-text {
+    margin-top: 25px;
+    font-size: 13px !important;
+    opacity: 0.5 !important;
+}
+
+@media (max-width: 992px) {
+    .benefits-grid { grid-template-columns: 1fr; }
+    .join-header h1 { font-size: 40px; }
+    .cta-card { padding: 60px 30px; }
+}
